@@ -1,0 +1,24 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/ll_buy_animal_main"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <Button
+            android:text="@string/back"
+            android:id="@+id/button_back_main"
+            android:textSize="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="150dp">
+        </Button>
+        <Button
+            android:text="@string/next"
+            android:id="@+id/button_next_main"
+            android:textSize="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="150dp">
+        </Button>
+     </LinearLayout>
+ </LinearLayout>

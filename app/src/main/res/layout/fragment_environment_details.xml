@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+        <LinearLayout
+            android:id="@+id/ll_temperature"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:text="@string/temperature"
+                android:id="@+id/tv_id"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:hint="From api"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_temperature"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+
+            <Spinner
+                android:id="@+id/spinner_temperature"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:id="@+id/ll_humidity"
+            android:layout_below="@+id/ll_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:text="@string/humidity"
+                android:id="@+id/tv_humidity"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="100dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:hint="Measured by hygrometer % relative humidity"
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_humidity"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_weight"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="@string/area"
+                android:id="@+id/tv_area_of_shed"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:hint="(Inches * inches)"
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_area_of_shed"
+                android:layout_height="wrap_content"
+                android:layout_width="150dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_weight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="@string/height"
+                android:id="@+id/tv_height"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_height"
+                android:layout_height="wrap_content"
+                android:layout_width="150dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_width"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_height"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="@string/width"
+                android:id="@+id/tv_width"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp"/>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_width"
+                android:layout_height="wrap_content"
+                android:layout_width="150dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_surface_of_shed"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_width"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="@string/surface"
+                android:id="@+id/tv_surface_of_shed"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="180dp">
+            </TextView>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radiobutton1_soil"
+                    android:text="@string/soil"/>
+                <RadioButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radiobutton1_concrete"
+                    android:text="@string/concrete"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

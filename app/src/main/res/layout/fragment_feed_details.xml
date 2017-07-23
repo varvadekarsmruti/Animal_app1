@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_avg_water_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:text="Average water intake(litres per day)"
+                android:id="@+id/tv_avg_water_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <Spinner
+                android:id="@+id/spinner_avg_water_intake"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_vitamin_intake"
+            android:layout_below="@+id/ll_avg_water_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Vitamin intake(gms)"
+                android:id="@+id/tv_vitamin_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_vitamin_intake"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_mineral_intake"
+            android:layout_below="@+id/ll_vitamin_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Mineral intake(gms)"
+                android:id="@+id/tv_mineral_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_mineral_intake"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_protein_intake"
+            android:layout_below="@+id/ll_mineral_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Protein intake(gms)"
+                android:id="@+id/tv_protein_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_protein_intake"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_fat_intake"
+            android:layout_below="@+id/ll_protein_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Fat intake(gms)"
+                android:id="@+id/tv_fat_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_fat_intake"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_calcium_intake"
+            android:layout_below="@+id/ll_fat_intake"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Calcium intake(gms)"
+                android:id="@+id/tv_calcium_intake"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="200dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_calcium_intake"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/ll_calcium_intake"
+            android:text="@string/typeoffodder"
+            android:id="@+id/tv_fodder_types"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="35dp"
+            android:layout_width="match_parent">
+        </TextView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_green_fodder"
+            android:layout_below="@+id/tv_fodder_types"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="@string/green_fodder"
+                android:id="@+id/tv_green_fodder"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textSize="20dp"
+                android:id="@+id/et_green_fodder"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_dry_fodder"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/ll_green_fodder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="@string/dry_fodder"
+                android:id="@+id/tv_dry_fodder"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="150dp">
+            </TextView>
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_dry_fodder"
+                android:layout_height="wrap_content"
+                android:layout_width="90dp">
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
